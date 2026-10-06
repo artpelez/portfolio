@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Arturo Pelegrín Jerez (08. Sweet Harmony (Captura 3)) — Eléctrico de Rodaje / Spark & Asistente de Cámara</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0c0a15;
+      --accent: #e11d48;
+      --accent-light: #f43f5e;
+      --accent-soft: #ffe4e6;
+      --text: #18181b;
+      --text-muted: #52525b;
+      --border: #e4e4e7;
+      --bg: #ffffff;
+      --sidebar-bg: #fff1f2;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: var(--text);
+      background-color: #cbd5e1;
+      line-height: 1.35;
+      font-size: 8.5pt;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page-container {
+      width: 210mm;
+      height: 297mm;
+      max-height: 297mm;
+      margin: 20px auto;
+      background: var(--bg);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0a0812 0%, #221021 100%);
+      color: #ffffff;
+      padding: 18px 24px 14px 24px;
+      border-bottom: 3px solid var(--accent);
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 15px;
+    }
+
+    .name-title h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 19pt;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: #ffffff;
+      text-transform: uppercase;
+      line-height: 1.05;
+    }
+
+    .name-title h2 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 9.8pt;
+      font-weight: 600;
+      color: var(--accent-light);
+      margin-top: 3px;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+    }
+
+    .badge-mobility {
+      display: inline-block;
+      background: rgba(217, 119, 6, 0.25);
+      border: 1px solid var(--accent);
+      color: #fde68a;
+      font-size: 7.2pt;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 12px;
+      margin-top: 5px;
+      letter-spacing: 0.3px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 4px;
+      font-size: 7.8pt;
+      color: #cbd5e1;
+      text-align: right;
+    }
+
+    .contact-grid a {
+      color: #f8fafc;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 5px;
+    }
+
+    .contact-grid a:hover {
+      color: var(--accent-light);
+    }
+
+    .contact-grid span.icon {
+      color: var(--accent-light);
+      font-size: 8.5pt;
+    }
+
+    .content-body {
+      display: grid;
+      grid-template-columns: 65mm 1fr;
+      flex-grow: 1;
+      height: calc(297mm - 90px);
+      overflow: hidden;
+    }
+
+    .sidebar {
+      background: var(--sidebar-bg);
+      border-right: 1px solid var(--border);
+      padding: 14px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+    }
+
+    .main-col {
+      padding: 14px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .sec-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 9pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--primary);
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 2px;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .sec-title .bullet {
+      width: 5px;
+      height: 5px;
+      background: var(--accent);
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .profile-text {
+      font-size: 8pt;
+      color: #334155;
+      text-align: justify;
+      line-height: 1.38;
+    }
+
+    .job-item {
+      margin-bottom: 8px;
+    }
+
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+
+    .job-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 9.2pt;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .job-company {
+      font-size: 8.2pt;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .job-date {
+      font-size: 7.2pt;
+      font-weight: 600;
+      color: var(--text-muted);
+      background: #e2e8f0;
+      padding: 1px 6px;
+      border-radius: 8px;
+    }
+
+    .job-role {
+      font-size: 8pt;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 4px;
+    }
+
+    .job-item ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .job-item ul li {
+      font-size: 7.6pt;
+      color: #334155;
+      margin-bottom: 3px;
+      position: relative;
+      padding-left: 11px;
+      line-height: 1.32;
+    }
+
+    .job-item ul li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    .job-tech-tag {
+      font-size: 6.8pt;
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      color: #1e40af;
+      padding: 1px 5px;
+      border-radius: 3px;
+      display: inline-block;
+      margin-top: 3px;
+      margin-right: 2px;
+      font-weight: 600;
+    }
+
+    .edu-item {
+      margin-bottom: 7px;
+    }
+
+    .edu-degree {
+      font-family: 'Outfit', sans-serif;
+      font-size: 8.4pt;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .edu-school {
+      font-size: 7.6pt;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .edu-desc {
+      font-size: 7.3pt;
+      color: #475569;
+      line-height: 1.28;
+      margin-top: 1px;
+    }
+
+    .skill-group {
+      margin-bottom: 5px;
+    }
+
+    .skill-cat {
+      font-size: 7.5pt;
+      font-weight: 700;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      margin-bottom: 2px;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3px;
+    }
+
+    .skill-pill {
+      font-size: 6.8pt;
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      color: #334155;
+      padding: 1px 5px;
+      border-radius: 3px;
+      font-weight: 500;
+    }
+
+    .skill-pill.highlight {
+      background: var(--accent-soft);
+      border-color: #fcd34d;
+      color: #92400e;
+      font-weight: 600;
+    }
+
+    .lang-item {
+      display: flex;
+      justify-content: space-between;
+      font-size: 7.4pt;
+      padding: 1px 0;
+      border-bottom: 1px dotted #cbd5e1;
+    }
+
+    .lang-name {
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .lang-level {
+      color: var(--text-muted);
+    }
+
+    .qualities-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+      font-size: 7.4pt;
+      color: #334155;
+    }
+
+    .qualities-grid strong {
+      color: var(--primary);
+    }
+
+    .floating-print {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: var(--accent);
+      color: #ffffff;
+      padding: 11px 20px;
+      border-radius: 30px;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: 13px;
+      border: none;
+      box-shadow: 0 4px 18px rgba(217, 119, 6, 0.45);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      z-index: 1000;
+      transition: all 0.2s;
+    }
+
+    .floating-print:hover {
+      background: #b45309;
+      transform: translateY(-2px);
+    }
+
+    @media print {
+      body {
+        background: transparent;
+        padding: 0;
+        margin: 0;
+      }
+      .page-container {
+        width: 100% !important;
+        height: 297mm !important;
+        max-height: 297mm !important;
+        margin: 0 !important;
+        box-shadow: none !important;
+        border: none !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+      @page {
+        size: A4 portrait;
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="floating-print no-print" onclick="window.print()">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="6 9 6 2 18 2 18 9"></polyline>
+      <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+      <rect x="6" y="14" width="12" height="8"></rect>
+    </svg>
+    Guardar en PDF / Imprimir
+  </button>
+
+  <div class="page-container">
+    <header>
+      <div class="header-top">
+        <div class="name-title">
+          <h1>Arturo Pelegrín Jerez</h1>
+          <h2>Eléctrico de Rodaje / Spark · Técnico de Cámara · Pertiguista</h2>
+          <div class="badge-mobility">
+            ⚡ Base: Granada · Disponibilidad para Viajar / Movilidad Nacional Inmediata
+          </div>
+        </div>
+        <div class="contact-grid">
+          <div><a href="tel:+34694422899"><span class="icon">📞</span> +34 694 42 28 99</a></div>
+          <div><a href="mailto:arturopj1106@gmail.com"><span class="icon">✉️</span> arturopj1106@gmail.com</a></div>
+          <div><a href="https://www.youtube.com/watch?v=bVJZdsOnWVM" target="_blank"><span class="icon">🎬</span> Tráiler Oficial en YouTube</a></div>
+          <div><span>🚗 Sin vehículo propio / Sin carné B</span></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="content-body">
+      <!-- Barra lateral de competencias -->
+      <aside class="sidebar">
+        <div>
+          <div class="sec-title"><span class="bullet"></span>Luminarias & Control</div>
+          <div class="skill-group">
+            <div class="skill-cat">LED Continuo & Proyección</div>
+            <div class="skill-tags">
+              <span class="skill-pill highlight">Aputure / Amaran</span>
+              <span class="skill-pill highlight">Nanlite Forza / Pavo</span>
+              <span class="skill-pill highlight">Astera Tubes</span>
+              <span class="skill-pill">Arri SkyPanel</span>
+              <span class="skill-pill">Control on-board CCT/Dim</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-cat">Tungsteno & Descarga</div>
+            <div class="skill-tags">
+              <span class="skill-pill">Fresneles Arri</span>
+              <span class="skill-pill">Cuarzos 1K / 2K</span>
+              <span class="skill-pill">Proyectores HMI</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="sec-title"><span class="bullet"></span>Grip & Modificadores</div>
+          <div class="skill-tags">
+            <span class="skill-pill highlight">Ceferinos (C-Stands)</span>
+            <span class="skill-pill highlight">Pies Combo</span>
+            <span class="skill-pill">Brazos de extensión & Rótulas</span>
+            <span class="skill-pill">Garras & Clamps</span>
+            <span class="skill-pill highlight">Banderas de corte sólidas</span>
+            <span class="skill-pill">Bastidores & Palios difusión</span>
+            <span class="skill-pill">Sacos de arena (sandbags)</span>
+            <span class="skill-pill">Gelatinas Lee / Rosco</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="sec-title"><span class="bullet"></span>Dpto. de Cámara</div>
+          <div class="skill-tags">
+            <span class="skill-pill highlight">Blackmagic URSA 12K</span>
+            <span class="skill-pill highlight">Panasonic Lumix (Avanzado)</span>
+            <span class="skill-pill">Ópticas fijas de cine</span>
+            <span class="skill-pill">Rigging, jaula & portafiltros</span>
+            <span class="skill-pill">Baterías Anton Bauer / V-Mount</span>
+            <span class="skill-pill">Cuerpos ARRI / RED / Sony Cine</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="sec-title"><span class="bullet"></span>Sonido Directo en Set</div>
+          <div class="skill-tags">
+            <span class="skill-pill highlight">Operación de Pértiga (Boom)</span>
+            <span class="skill-pill">Microfonía de cañón</span>
+            <span class="skill-pill">Cableado XLR y balance de audio</span>
+            <span class="skill-pill">Sonido en planos complejos</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="sec-title"><span class="bullet"></span>Eléctrico & Seguridad</div>
+          <div class="skill-tags">
+            <span class="skill-pill highlight">Cálculo de potencias (kW/A)</span>
+            <span class="skill-pill">Cuadros distribución set</span>
+            <span class="skill-pill">Tiradas de líneas & Cetac</span>
+            <span class="skill-pill">Protocolos PRL en plató</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="sec-title"><span class="bullet"></span>Software Audiovisual</div>
+          <div class="skill-tags">
+            <span class="skill-pill">DaVinci Resolve</span>
+            <span class="skill-pill">Adobe Premiere Pro</span>
+            <span class="skill-pill">Shot Designer</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="sec-title"><span class="bullet"></span>Idiomas</div>
+          <div class="lang-item">
+            <span class="lang-name">Español</span>
+            <span class="lang-level">Nativo</span>
+          </div>
+          <div class="lang-item">
+            <span class="lang-name">Inglés</span>
+            <span class="lang-level">Fluido hablado / Técnico</span>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Columna Principal -->
+      <main class="main-col">
+        <section>
+          <div class="sec-title"><span class="bullet"></span>Perfil Técnico</div>
+          <p class="profile-text">
+            Técnico de iluminación y cámara para cine y publicidad, con formación técnica especializada de eléctrico de rodaje en <strong>Twin Freaks / ESCAC</strong> y trayectoria universitaria en Comunicación Audiovisual. Experiencia operativa en rodaje de ficción coordinando esquemas de iluminación, montaje y direccionamiento de proyectores LED y tungsteno, afianzamiento de maquinaria grip (C-Stands, banderas, difusiones) y riggeo de cámaras de cine de gran formato. Destacada versatilidad en set para asumir funciones de asistencia de cámara y operación de pértiga de sonido cuando la producción lo requiere, bajo estrictos protocolos de seguridad y agilidad entre cambios de plano.
+          </p>
+        </section>
+
+        <section>
+          <div class="sec-title"><span class="bullet"></span>Créditos & Experiencia en Rodaje</div>
+
+          <div class="job-item">
+            <div class="job-header">
+              <div>
+                <span class="job-title">El Bitcoin de Oro</span>
+                <span class="job-company">· BHC Creativa</span>
+              </div>
+              <span class="job-date">2025</span>
+            </div>
+            <div class="job-role">Ayudante de Cámara, Jefe de Eléctricos (Gaffer) & Pertiguista · Cortometraje Ficción</div>
+            <ul>
+              <li><strong>Esquemas de luz y balance lumínico:</strong> Montaje y balanceo de fuentes de luz según directrices del DoP; direccionamiento y recorte de contrastes mediante banderas sólidas y bastidores de difusión.</li>
+              <li><strong>Montaje y maquinaria grip:</strong> Instalación y repliegue de equipo al inicio y cierre de rodaje; afianzamiento riguroso de ceferinos y pies combo con sacos de arena en zonas de tránsito.</li>
+              <li><strong>Rigging de cámara de cine:</strong> Montaje integral, equilibrado y configuración de cuerpo <strong>Blackmagic URSA Mini Pro 12K</strong> con ópticas fijas de cine y sistema de baterías Anton Bauer Cine 150.</li>
+              <li><strong>Captación de sonido en set (Pertiguista):</strong> Operación de pértiga con micrófono de cañón para sonido directo y de referencia en secuencias de acción complejas, incluyendo tomas en interior de limusina.</li>
+            </ul>
+            <div>
+              <span class="job-tech-tag">Blackmagic 12K</span>
+              <span class="job-tech-tag">Esquemas de Luz</span>
+              <span class="job-tech-tag">Ceferinos & Grip</span>
+              <span class="job-tech-tag">Pertiguista en Rodaje</span>
+              <span class="job-tech-tag">Anton Bauer Cine 150</span>
+            </div>
+          </div>
+
+          <div class="job-item" style="margin-top: 8px;">
+            <div class="job-header">
+              <div>
+                <span class="job-title">Formación Técnica de Eléctrico en Plató</span>
+                <span class="job-company">· Twin Freaks / ESCAC</span>
+              </div>
+              <span class="job-date">Verano 2025</span>
+            </div>
+            <div class="job-role">Eléctrico en Formación Práctica Intensiva · Murcia</div>
+            <ul>
+              <li>Operación y montaje intensivo de proyectores LED de alta gama, cuarzos de tungsteno y aparatos Fresnel en plató profesional.</li>
+              <li>Tendido seguro de líneas eléctricas, cálculo de cargas por fase, cuadros de distribución Cetac y comprobación de tomas de tierra.</li>
+              <li>Prácticas de comunicación por walkie y agilidad de respuesta en peticiones de banderas, mallas, sedas y gelatinas.</li>
+            </ul>
+            <div>
+              <span class="job-tech-tag">Twin Freaks / ESCAC</span>
+              <span class="job-tech-tag">Distribución Eléctrica</span>
+              <span class="job-tech-tag">PRL Plató</span>
+              <span class="job-tech-tag">Modificadores de Luz</span>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="sec-title"><span class="bullet"></span>Formación Académica & Certificaciones</div>
+
+          <div class="edu-item">
+            <div class="job-header">
+              <span class="edu-degree">Competencias Digitales Aplicadas para Técnicos de Iluminación Iniciación: Eléctricos</span>
+              <span class="job-date">Julio 2025</span>
+            </div>
+            <div class="edu-school">OFF ESCAC (Escola Superior de Cinema i Audiovisuals de Catalunya - Universitat de Barcelona) & CINEMUR, Terrassa, Julio 2025</div>
+            <p class="edu-desc">Titulación oficial expedida por la ESCAC (adscrita a la Universitat de Barcelona). Capacitación en aparamenta eléctrica, cálculo de cargas, fuentes lumínicas y seguridad en set. <a href="certificado_escac.pdf" target="_blank" style="color:var(--accent); text-decoration:underline; font-weight:700;">[Ver Certificado Oficial PDF]</a></p>
+          </div>
+
+          <div class="edu-item" style="margin-top: 5px;">
+            <div class="job-header">
+              <span class="edu-degree">Grado en Comunicación Audiovisual</span>
+              <span class="job-date">2024 – Actualidad (3º Curso)</span>
+            </div>
+            <div class="edu-school">Universidad de Murcia (2024–2026) / Universidad de Granada (SICUE, 2026–Actualidad)</div>
+            <p class="edu-desc">Formación universitaria oficial iniciada en la UMU (1º y 2º cursos: 2024–2026) y cursando 3º curso (2026–2027) en la UGR vía movilidad SICUE.</p>
+          </div>
+        </section>
+
+        <section>
+          <div class="sec-title"><span class="bullet"></span>Competencias Operativas en Set</div>
+          <div class="qualities-grid">
+            <div>⚡ <strong>Anticipación:</strong> Preparación ágil de ceferinos, banderas y cables antes de cada cambio de plano.</div>
+            <div>🛡️ <strong>Seguridad Estricta:</strong> Contrapesado sistemático con sacos de arena y despeje de pasillos.</div>
+            <div>🤝 <strong>Coordinación en Equipo:</strong> Comunicación fluida con DoP, Gaffer, Maquinistas y Dpto. de Sonido.</div>
+            <div>🌍 <strong>Disponibilidad Total:</strong> Movilidad inmediata para rodajes de ficción y spots en todo el territorio.</div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+</body>
+</html>

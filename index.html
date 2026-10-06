@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio profesional de Arturo Pelegrín Jerez - Eléctrico de Rodaje, Asistente de Cámara y Pertiguista para ficción y publicidad.">
+  <title>Arturo Pelegrín | Eléctrico de Rodaje & Asistente de Cámara</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Barra de Progreso de Scroll Superior -->
+  <div class="scroll-progress-line" id="scrollProgressLine" aria-hidden="true"></div>
+
+  <!-- Navegación Superior -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-mark">⚡</span>
+        <div class="logo-text">
+          <span class="name">ARTURO PELEGRÍN</span>
+          <span class="sub">SPARK / CAMERA TECH</span>
+        </div>
+      </a>
+
+      <div class="nav-links">
+        <a href="#fiction">Ficción & Créditos</a>
+        <a href="#bts-gallery">Galería BTS (Set)</a>
+        <a href="#skills">Competencias</a>
+        <a href="#education">Formación</a>
+        <a href="#contact">Contacto</a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="cv.html" target="_blank" class="btn btn-outline btn-sm">
+          <span>📄</span> Ver CV (PDF)
+        </a>
+        <a href="https://wa.me/34694422899?text=Hola%20Arturo,%20he%20visto%20tu%20portfolio%20y%20me%20gustar%C3%ADa%20contactar%20contigo%20para%20un%20rodaje" target="_blank" class="btn btn-accent btn-sm">
+          <span>💬</span> WhatsApp
+        </a>
+      </div>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-avatar-wrap">
+        <img src="IMG-20250721-WA0058.jpg" alt="Arturo Pelegrín en rodaje de cine" class="hero-avatar">
+        <span class="avatar-tag">En set de rodaje</span>
+      </div>
+      <div class="hero-badge">
+        <span class="status-dot"></span> DISPONIBILIDAD INMEDIATA · MOVILIDAD NACIONAL E INTERNACIONAL
+      </div>
+      <h1 class="hero-title">
+        ARTURO PELEGRÍN JEREZ
+      </h1>
+      <p class="hero-subtitle">
+        <span class="text-amber">Eléctrico de Rodaje (Spark)</span> & Técnico de Cámara para Ficción y Publicidad
+      </p>
+      <p class="hero-bio">
+        Formado técnicamente en la productora <strong>Twin Freaks</strong> con certificación de la <strong>ESCAC</strong>. Especializado en diseño y montaje de esquemas de luz, gestión de fuentes LED y tungsteno, seguridad y distribución eléctrica de set, y riggeo de cámaras de cine de alta resolución.
+      </p>
+      
+      <div class="hero-cta-group">
+        <a href="#fiction" class="btn btn-accent btn-lg">
+          <span>🎬</span> Ver Ficción & Trabajos
+        </a>
+        <a href="#bts-gallery" class="btn btn-secondary btn-lg">
+          <span>📸</span> Fotos de Set (BTS)
+        </a>
+        <a href="tel:+34694422899" class="btn btn-outline btn-lg">
+          <span>📞</span> +34 694 42 28 99
+        </a>
+      </div>
+
+      <!-- Métricas rápidas de rodaje -->
+      <div class="hero-stats">
+        <div class="stat-card">
+          <div class="stat-number">ESCAC</div>
+          <div class="stat-label">Certificación Eléctrico de Rodaje</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">12K</div>
+          <div class="stat-label">Blackmagic URSA & Cine Lenses</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">GRIP</div>
+          <div class="stat-label">Ceferinos, Banderas & Palios</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Disponibilidad para Viajar</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Ficción y Crédito Destacado: El Bitcoin de Oro -->
+  <section class="section" id="fiction">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">CRÉDITOS EN PANTALLA</span>
+        <h2 class="section-title">Cortometraje de Ficción</h2>
+        <p class="section-description">
+          Proyecto destacado de ficción cinematográfica con desglose técnico del trabajo de iluminación y cámara.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <!-- Visual / Reproductor -->
+        <div class="project-media">
+          <div class="video-container" id="videoContainer" style="position: relative; width: 100%; height: 100%; min-height: 380px; background: #000; overflow: hidden;">
+            <img src="trailer_poster.jpg" alt="El Bitcoin de Oro — Cartel Oficial" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10,14,23,0.3) 0%, rgba(10,14,23,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 22px;">
+              <div style="display: flex; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; color: #cbd5e1; text-transform: uppercase;">
+                <span style="background: rgba(0,0,0,0.65); border: 1px solid var(--amber); color: var(--amber); padding: 3px 10px; border-radius: 12px;">Ficción · BHC Creativa · 2025</span>
+                <span style="background: rgba(0,0,0,0.65); padding: 3px 8px; border-radius: 6px;">1080p Full HD</span>
+              </div>
+              <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; text-align: center;">
+                <a href="https://www.youtube.com/watch?v=bVJZdsOnWVM" target="_blank" rel="noopener noreferrer" style="width: 64px; height: 64px; background: var(--amber); color: #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 30px var(--amber-glow); text-decoration: none; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'" aria-label="Reproducir trailer en YouTube">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+                </a>
+                <div style="font-size: 1.15rem; font-weight: 700; color: #fff; font-family: 'Outfit', sans-serif;">El Bitcoin de Oro (2025)</div>
+                <a href="https://www.youtube.com/watch?v=bVJZdsOnWVM" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm">
+                  <span>▶</span> Reproducir Trailer en YouTube ↗
+                </a>
+              </div>
+              <div style="height: 6px;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ficha Técnica y Rol -->
+        <div class="project-info">
+          <div class="project-tag-pill">Ficción · 2025</div>
+          <h3 class="project-title">El Bitcoin de Oro</h3>
+          <div class="project-meta-grid">
+            <div class="meta-item">
+              <span class="meta-label">Productora:</span>
+              <span class="meta-val">BHC Creativa</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Roles Desempeñados:</span>
+              <span class="meta-val highlight-amber">Jefe de Eléctricos, Ayudante de Cámara & Pertiguista</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Cámara Principal:</span>
+              <span class="meta-val">Blackmagic URSA Mini Pro 12K</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Alimentación & Ópticas:</span>
+              <span class="meta-val">Anton Bauer Cine 150 · Lentes fijas</span>
+            </div>
+          </div>
+
+          <div class="project-duties">
+            <h4>Responsabilidades Clave en Set:</h4>
+            <ul>
+              <li><strong>Esquemas e Intención Visual:</strong> Diseño y montaje de esquemas de iluminación con fuentes continuas; matizado con difusiones y recorte de contraste junto al DoP.</li>
+              <li><strong>Grip & Modificación de Luz:</strong> Operación y contrapesado seguro de ceferinos (C-Stands), banderas sólidas de recorte y soportes cenitales.</li>
+              <li><strong>Asistencia al Dpto. de Cámara:</strong> Montaje, calibración y mantenimiento de Blackmagic URSA 12K con follow focus, monitor y baterías Anton Bauer.</li>
+              <li><strong>Sonido Directo (Pertiguista):</strong> Operación de pértiga telescópica y microfonía con protección antiviento (deadcat) en planos máster y secuencias complejas dentro de limusina.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galería BTS (Behind The Scenes) -->
+  <section class="section section-dark" id="bts-gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">BEHIND THE SCENES</span>
+        <h2 class="section-title">Eléctrico en Acción: Set, Grip & Cámara</h2>
+        <p class="section-description">
+          Fotografías reales del rodaje de 'El Bitcoin de Oro' demostrando operatividad en iluminación, banderas de recorte, cámara 12K y sonido directo.
+        </p>
+      </div>
+
+      <div class="bts-grid" id="btsGrid">
+        <!-- Foto BTS 1: Grip & Bandera -->
+        <div class="bts-card" onclick="openLightbox(0)">
+          <div class="bts-thumb">
+            <img src="IMG-20250721-WA0067.jpg" alt="Ajuste fino de ceferino y bandera sólida de corte en set" loading="lazy">
+            <span class="bts-category">Grip & Iluminación</span>
+          </div>
+          <div class="bts-caption">
+            <h4>Control de Contraste: Ceferino & Bandera</h4>
+            <p>Ajuste de bandera de corte sólida para recortar contaminación lumínica y esculpir las sombras sobre los actores en escena.</p>
+          </div>
+        </div>
+
+        <!-- Foto BTS 2: Asistencia de Cámara 12K -->
+        <div class="bts-card" onclick="openLightbox(1)">
+          <div class="bts-thumb">
+            <img src="IMG-20250721-WA0058.jpg" alt="Arturo ajustando la Blackmagic URSA Mini Pro 12K en set" loading="lazy">
+            <span class="bts-category">Dpto. de Cámara</span>
+          </div>
+          <div class="bts-caption">
+            <h4>Riggeo Blackmagic URSA 12K</h4>
+            <p>Configuración del cuerpo cinematográfico con batería Anton Bauer Cine 150, ópticas de cine y emisor de señal inalámbrica de vídeo.</p>
+          </div>
+        </div>
+
+        <!-- Foto BTS 3: Rigging y Posición de Cámara -->
+        <div class="bts-card" onclick="openLightbox(2)">
+          <div class="bts-thumb">
+            <img src="IMG-20250721-WA0025.jpg" alt="Instalación de soporte de luz y posición de cámara" loading="lazy">
+            <span class="bts-category">Rigging & Asistencia</span>
+          </div>
+          <div class="bts-caption">
+            <h4>Soporte de Luz & Coordinación</h4>
+            <p>Montaje de soporte cenital de iluminación y asistencia directa al operador de cámara en espacio de rodaje estrecho.</p>
+          </div>
+        </div>
+
+        <!-- Foto BTS 4: Pertiguista / Sonido en Vehículo -->
+        <div class="bts-card" onclick="openLightbox(3)">
+          <div class="bts-thumb">
+            <img src="IMG-20250713-WA0035.jpg" alt="Pertiguista y operador en rodaje interior de limusina" loading="lazy">
+            <span class="bts-category">Sonido Directo</span>
+          </div>
+          <div class="bts-caption">
+            <h4>Pertiguista en Rodaje en Vehículo</h4>
+            <p>Captación de sonido directo con microfonía protegida (deadcat) en rodaje de secuencia interior en limusina junto al equipo técnico y elenco.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Competencias Técnicas (Hard Skills) -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">ARSENAL TÉCNICO</span>
+        <h2 class="section-title">Competencias de Rodaje</h2>
+        <p class="section-description">
+          Conocimiento práctico y fundamentado de los estándares técnicos exigidos en la industria cinematográfica y publicitaria.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Tarjeta 1: Luminarias -->
+        <div class="skill-card">
+          <div class="skill-card-icon">💡</div>
+          <h3 class="skill-card-title">Luminarias & Fuentes</h3>
+          <ul class="skill-card-list">
+            <li><strong>LED Continuo:</strong> Proyectores Aputure / Amaran, Nanlite (Forza / PavoTube), Arri SkyPanel con regulación CCT.</li>
+            <li><strong>Tubos & Barras LED:</strong> Iluminación envolvente, luz suave y tubos prácticos de rodaje.</li>
+            <li><strong>Fuentes Tradicionales:</strong> Proyectores Fresnel de tungsteno (Arri 650W, 1K, 2K), cuarzos y aparatos HMI de descarga.</li>
+            <li><strong>Ajuste y Fotometría:</strong> Calibración de temperatura de color, dimmer directo y modulación fina de intensidad en set.</li>
+          </ul>
+        </div>
+
+        <!-- Tarjeta 2: Grip & Modificación -->
+        <div class="skill-card">
+          <div class="skill-card-icon">🏗️</div>
+          <h3 class="skill-card-title">Grip & Modificación de Luz</h3>
+          <ul class="skill-card-list">
+            <li><strong>Estructuras:</strong> Ceferinos (C-Stands), pies combo, brazos articulados y garras de fijación.</li>
+            <li><strong>Palios & Marcos:</strong> Montaje de palios 2x2m y 4x4m con telas de difusión (Silk, Grid Cloth, Frost).</li>
+            <li><strong>Corte y Rebote:</strong> Banderas de corte sólidas (floppies), mallas sencillas/dobles y reflectores estucados/plata.</li>
+            <li><strong>Filtrado:</strong> Gelatinas correctoras de color (CTO, CTB, Plus Green, Minus Green) de marcas Rosco y Lee Filters.</li>
+          </ul>
+        </div>
+
+        <!-- Tarjeta 3: Distribución Eléctrica -->
+        <div class="skill-card">
+          <div class="skill-card-icon">⚡</div>
+          <h3 class="skill-card-title">Distribución Eléctrica & Seguridad</h3>
+          <ul class="skill-card-list">
+            <li><strong>Cálculo de Cargas:</strong> Determinación precisa de potencias (W) y amperaje (A) para evitar sobrecargas y cortes.</li>
+            <li><strong>Conexionado de Potencia:</strong> Cuadros de distribución de set, líneas Cetac (monofásico y trifásico) y Schuko.</li>
+            <li><strong>Seguridad en Set:</strong> Contrapesado estricto con sacos de arena, encintado y pasacables en áreas de tránsito.</li>
+            <li><strong>Normativa PRL:</strong> Manipulación segura de luminarias de alta temperatura y prevención de riesgos laborales.</li>
+          </ul>
+        </div>
+
+        <!-- Tarjeta 4: Departamento de Cámara -->
+        <div class="skill-card">
+          <div class="skill-card-icon">🎥</div>
+          <h3 class="skill-card-title">Departamento de Cámara</h3>
+          <ul class="skill-card-list">
+            <li><strong>Blackmagic URSA 12K:</strong> Montaje completo, rigging de cine, baterías V-Mount / Anton Bauer Cine 150 y grabación en Blackmagic RAW.</li>
+            <li><strong>Ecosistema Panasonic Lumix:</strong> Manejo avanzado y perfiles LOG (gamas Lumix S y Lumix GH).</li>
+            <li><strong>Ópticas de Cine:</strong> Cuidados, limpieza, montura PL/EF y manejo de objetivos de distancia focal fija.</li>
+            <li><strong>Cultura de Cámara:</strong> Conocimientos teóricos de estándares Arri Alexa, RED y Sony CineAlta (FX6/FX9).</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formación Académica & Certificaciones -->
+  <section class="section section-dark" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">TRAYECTORIA FORMATIVA</span>
+        <h2 class="section-title">Formación Académica & Certificaciones</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">JULIO 2025 · TITULACIÓN OFICIAL</div>
+            <h3 class="timeline-title">Competencias Digitales Aplicadas para Técnicos de Iluminación Iniciación: Eléctricos</h3>
+            <div class="timeline-institution">OFF ESCAC (Escola Superior de Cinema i Audiovisuals de Catalunya - Universitat de Barcelona) & CINEMUR, Terrassa, Julio 2025</div>
+            <p class="timeline-desc">Certificación oficial expedida por el Director de la ESCAC (centro adscrito a la Universitat de Barcelona) en colaboración con Cinemur. Formación especializada en tecnología de iluminación cinematográfica, distribución de cargas y potencias, fuentes modernas (LED, HMI, Tungsteno), montaje de grip seguro y dinámicas de rodaje profesional.</p>
+            <div style="margin-top: 14px; display: flex; gap: 10px; flex-wrap: wrap;">
+              <button onclick="openCertificateModal()" style="display:inline-flex; align-items:center; gap:8px; background:rgba(251,113,133,0.15); border:1px solid var(--amber); color:var(--primary, #fff); padding:8px 16px; border-radius:6px; font-family:'JetBrains Mono',monospace; font-size:0.8rem; font-weight:700; cursor:pointer; transition:all 0.2s;">
+                📜 <span>Ver Certificado Oficial (ESCAC)</span>
+              </button>
+              <a href="certificado_escac.pdf" target="_blank" style="display:inline-flex; align-items:center; gap:6px; background:var(--bg-card); border:1px solid var(--border); color:var(--text-muted); padding:8px 14px; border-radius:6px; font-family:'JetBrains Mono',monospace; font-size:0.78rem; text-decoration:none;">
+                📄 <span>Descargar Titulación (PDF)</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2024 – ACTUALIDAD (3º CURSO)</div>
+            <h3 class="timeline-title">Grado en Comunicación Audiovisual</h3>
+            <div class="timeline-institution">Universidad de Murcia (2024–2026) / Universidad de Granada (SICUE, 2026–Actualidad)</div>
+            <p class="timeline-desc">Formación universitaria iniciada en la UMU (1º y 2º cursos: 2024–2026) y cursando 3º curso (2026–2027) en la UGR mediante el programa nacional de movilidad SICUE.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto Directo -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact-card">
+        <div class="contact-header">
+          <span class="section-tag">CONTACTO DIRECTO</span>
+          <h2 class="contact-title">¿Tienes un rodaje de ficción o publicidad?</h2>
+          <p class="contact-desc">Disponible como Eléctrico (Spark), Asistente de Cámara o Pertiguista. Base operativa en Granada con disponibilidad inmediata para viajar.</p>
+        </div>
+
+        <div class="contact-methods">
+          <a href="tel:+34694422899" class="contact-method-card">
+            <div class="contact-icon">📞</div>
+            <div class="contact-info">
+              <span class="method-label">Llamada Directa</span>
+              <span class="method-val">+34 694 42 28 99</span>
+            </div>
+          </a>
+
+          <a href="mailto:arturopj1106@gmail.com" class="contact-method-card">
+            <div class="contact-icon">✉️</div>
+            <div class="contact-info">
+              <span class="method-label">Correo Electrónico</span>
+              <span class="method-val">arturopj1106@gmail.com</span>
+            </div>
+          </a>
+
+          <a href="https://wa.me/34694422899?text=Hola%20Arturo,%20te%20escribo%20para%20un%20proyecto" target="_blank" class="contact-method-card">
+            <div class="contact-icon">💬</div>
+            <div class="contact-info">
+              <span class="method-label">WhatsApp Directo</span>
+              <span class="method-val">Escribir por WhatsApp</span>
+            </div>
+          </a>
+
+          <a href="cv.html" target="_blank" class="contact-method-card highlight-card">
+            <div class="contact-icon">📄</div>
+            <div class="contact-info">
+              <span class="method-label">Curriculum Vitae</span>
+              <span class="method-val">Ver / Imprimir PDF</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <strong>Arturo Pelegrín Jerez</strong> · Eléctrico de Rodaje & Técnico de Cámara
+        <p>Granada, España · Disponibilidad de desplazamiento nacional</p>
+      </div>
+      <div class="footer-right">
+        <a href="#hero">Subir ↑</a>
+        <a href="cv.html" target="_blank">CV en PDF</a>
+        <a href="mailto:arturopj1106@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal para Galería BTS -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+    <div class="lightbox-dialog" onclick="event.stopPropagation()">
+      <button class="lightbox-close" onclick="closeLightbox()" aria-label="Cerrar">✕</button>
+      <div class="lightbox-img-box" id="lightboxImgBox">
+        <!-- Renderizado por script.js -->
+      </div>
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
